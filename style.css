@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+header {
+  padding: 20px;
+  background: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1, h2 { margin-top: 0; }
+.stats { display: flex; gap: 15px; flex-wrap: wrap; }
+main { max-width: 900px; margin: 0 auto; padding: 25px 16px; }
+.case {
+  text-align: center;
+  background: #1f2937;
+  border-radius: 18px;
+  padding: 35px 20px;
+  margin-bottom: 25px;
+}
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:disabled { opacity: .5; cursor: not-allowed; }
+.result {
+  min-height: 100px;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 14px;
+  background: #111827;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: #1f2937;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+}
+.card .emoji { font-size: 45px; }
+.card .rarity { opacity: .75; font-size: 13px; }
